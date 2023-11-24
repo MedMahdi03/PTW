@@ -29,7 +29,7 @@ label {
 }
 .container {
   width: 400px;
-  height: 600px;
+  height: 500px;
   padding: 10px;
   background-image: url("../imgs/backgroundImg.jpg");
   border-radius: 15px;
@@ -93,6 +93,7 @@ label {
 }
 .login .btn input {
   display: block;
+  cursor: pointer;
   width: 180px;
   padding: 6px;
   font-size: 25px;
@@ -104,8 +105,32 @@ label {
   -moz-transition: 0.3s all;
   -ms-transition: 0.3s all;
   -o-transition: 0.3s all;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 .login .btn input:hover {
   background-color: var(--red-color);
   color: var(--white-color);
+}
+.login #forgot a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  color: var(--white-color);
+  text-align: center;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+.login #forgot a:hover {
+  color: var(--red-color);
 }
