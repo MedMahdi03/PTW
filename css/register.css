@@ -1,0 +1,92 @@
+:root {
+  --background-color: #1f2122;
+  --red-color: #f51f1f;
+  --white-color: #fff;
+  --grey-color: #909695;
+}
+@font-face {
+  font-family: "SmoochSans";
+  src: url("../fonts/SmoochSans-VariableFont_wght.ttf");
+}
+body {
+  font-family: "SmoochSans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+h2 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px;
+  font-size: 45px;
+}
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0px 6px;
+  color: var(--grey-color);
+}
+.container {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-image: url("../imgs/backgroundImg.jpg");
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.register input[type="email"],
+.register input[type="password"] {
+  display: block;
+  margin-top: 10px;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #343131;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  width: 92%;
+}
+.register input[type="email"]:focus,
+.register input[type="password"]:focus {
+  outline-color: var(--red-color);
+  color: var(--background-color);
+  caret-color: var(--red-color);
+}
+.register .create {
+  width: 100%;
+}
+.register .create button {
+  display: block;
+  cursor: pointer;
+  width: 180px;
+  padding: 6px;
+  margin: 20px auto;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: var(--white-color);
+  color: var(--red-color);
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.register .create button:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
