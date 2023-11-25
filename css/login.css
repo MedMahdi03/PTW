@@ -50,7 +50,8 @@ label {
   margin: 5px 0px 6px;
 }
 
-.login input[type="text"] {
+.login input[type="text"],
+.login input[type="password"] {
   display: block;
   margin-top: 5px;
   font-size: 22px;
@@ -61,7 +62,8 @@ label {
   padding: 10px;
   width: 92%;
 }
-.login input[type="text"]:focus {
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
   outline-color: var(--red-color);
   color: var(--background-color);
   caret-color: var(--red-color);
